@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         { 
             title: 'Nova Gaming Network', 
-            startDate: 'April 2025', 
+            startDate: 'March 2025', 
             link: 'https://novagamingnet.com',
             logo: 'https://i.imgur.com/Q09QwLj.png'
         }

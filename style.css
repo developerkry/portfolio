@@ -6,8 +6,9 @@ body {
     color: #e0e0e0; /* Light text */
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start; /* Align content to the top */
+    min-height: 100vh; /* Ensure body takes full height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 #container {
@@ -18,10 +19,10 @@ body {
     max-width: 800px;
     padding: 2rem;
     overflow: hidden;
-    max-height: 90vh; /* Limit the height */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Ensure content is spaced properly */
+    margin-bottom: 2rem; /* Add spacing at the bottom for scrolling */
 }
 
 header {
@@ -296,6 +297,7 @@ info-box {
     body {
         flex-direction: column; /* Stack content vertically */
         height: auto; /* Allow scrolling */
+        overflow-y: auto; /* Enable vertical scrolling */
     }
 
     #container {

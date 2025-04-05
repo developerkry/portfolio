@@ -284,3 +284,62 @@ info-box {
 #back-home-button:hover {
     background-color: #1093ffe5;
 }
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    #container {
+        width: 100%;
+        max-width: none;
+        padding: 1rem;
+        border-radius: 0; /* Remove rounded corners for mobile */
+        box-shadow: none; /* Remove shadow for a cleaner look */
+    }
+
+    #header-content {
+        flex-direction: column; /* Stack profile picture and text vertically */
+        gap: 1rem;
+    }
+
+    #profile-picture {
+        width: 80px;
+        height: 80px;
+    }
+
+    #header-text {
+        text-align: center; /* Center-align text for mobile */
+    }
+
+    #header-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 0.5rem;
+    }
+
+    main {
+        padding: 0.5rem 0;
+    }
+
+    #projectsList {
+        gap: 0.5rem; /* Reduce spacing between cards */
+    }
+
+    .project-card {
+        width: 150px; /* Smaller cards for mobile */
+    }
+
+    .project-overlay h3 {
+        font-size: 0.9rem; /* Adjust font size for smaller cards */
+    }
+
+    .project-overlay p {
+        font-size: 0.7rem; /* Adjust font size for smaller cards */
+    }
+
+    .project-link {
+        font-size: 0.7rem; /* Adjust button font size */
+        padding: 0.3rem 0.6rem; /* Adjust button padding */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Smaller footer text */
+    }
+}

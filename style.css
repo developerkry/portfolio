@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    background-color: #1e1e1e; /* Darker container */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    width: 90%;
+    max-width: 800px;
+    padding: 2rem;
+    overflow: hidden;
+    max-height: 90vh; /* Limit the height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced properly */
+}
+
+header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Add spacing between the image and text */
+}
+
+#profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #000000;
+    position: static; /* Remove absolute positioning */
+    transform: none; /* Remove transformation */
+}
+
+#header-text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Add spacing between elements */
+}
+
+#header-buttons {
+    display: flex;
+    gap: 1rem; /* Add spacing between the buttons */
+}
+
+#contact-button, #view-projects-button {
+    background-color: #1093ff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#contact-button:hover, #view-projects-button:hover {
+    background-color: #1093ffe5;
+    translate: 0.05rem 0.05rem; /* Slightly move the button on hover */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 1rem 0;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #1093ff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #2e2e2e; /* Darker list background */
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1093ff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: #000000 2px 2px 6px; /* Subtle shadow */
+}
+
+button:hover {
+    background-color: #1093ffe5;
+    translate: 0.05rem 0.05rem; /* Slightly move the button on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+#skillsChart {
+    display: block;
+    margin: 2rem auto;
+    max-width: 400px;
+    background-color: #1e1e1e; /* Match container background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+#about {
+    text-align: center; /* Center the entire section */
+}
+
+#about p {
+    justify-content: center; /* Center the text within each line */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Add spacing between label and value */
+    font-size: 1.1rem;
+}
+
+#about strong {
+    color: #1093ff;
+}
+
+info-box {
+    background-color: #2e2e2e; /* Darker background for the box */
+    color: #e0e0e0; /* Light text */
+    padding: 0.3rem 0.6rem;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1rem;
+    display: inline-block;
+}
+
+#skills h2 {
+    text-align: center; /* Center the programming knowledge header */
+}
+
+#projects {
+    text-align: center;
+}
+
+#projects h2 {
+    color: #1093ff;
+    margin-bottom: 1rem;
+}
+
+#projectsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Spacing between cards */
+    padding: 0;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 200px; /* Reduced width for smaller cards */
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.project-image {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 100%; /* Maintain a 1:1 aspect ratio */
+    overflow: hidden;
+}
+
+.project-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.project-overlay h3 {
+    margin: 0;
+    font-size: 1rem; /* Adjusted font size for smaller cards */
+}
+
+.project-overlay p {
+    margin: 0;
+    font-size: 0.8rem; /* Adjusted font size for smaller cards */
+}
+
+.project-link {
+    display: none; /* Hide the button by default */
+    background-color: #1093ff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem; /* Adjusted padding for smaller cards */
+    border-radius: 5px;
+    font-size: 0.75rem; /* Adjusted font size for smaller cards */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    transition: background-color 0.3s ease;
+}
+
+.project-card:hover .project-link {
+    display: inline-block; /* Show the button when hovering over the card */
+}
+
+.project-link:hover {
+    background-color: #1093ffe7;
+    translate: 0.05rem 0.05rem; /* Slightly move the button on hover */
+}
+
+#back-home-button {
+    background-color: #1093ff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+#back-home-button:hover {
+    background-color: #1093ffe5;
+}

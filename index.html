@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayden Tabor - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="header-content">
+                <img src="https://i.imgur.com/8H0lLEN.png" alt="Profile Picture" id="profile-picture">
+                <div id="header-text">
+                    <h1>Ayden Tabor</h1>
+                    <p>KryClopz / Mr. Wannabe</p>
+                    <div id="header-buttons">
+                        <button id="contact-button" onclick="window.location.href='mailto:aydentabor99@yahoo.com'">Contact Me</button>
+                        <button id="view-projects-button" onclick="window.location.href='projects.html'">View Projects</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="about">
+                <p><strong>Age:</strong> <span class="info-box" id="age" data-birth-year="2007"></span></p>
+                <p><strong>Location:</strong> <span class="info-box" id="location">Louisiana, USA</span></p>
+            </section>
+            <section id="skills">
+                <h2>Programming Knowledge</h2>
+                <canvas id="skillsChart" width="400" height="400"></canvas>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Ayden Tabor</p>
+        </footer>
+    </div>
+</body>
+</html>

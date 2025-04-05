@@ -285,14 +285,26 @@ info-box {
     background-color: #1093ffe5;
 }
 
+#specialty {
+    font-size: 1rem;
+    color: #1093ff;
+    margin-top: 0.5rem;
+}
+
 /* Responsive styles for mobile */
 @media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Stack content vertically */
+        height: auto; /* Allow scrolling */
+    }
+
     #container {
         width: 100%;
         max-width: none;
         padding: 1rem;
         border-radius: 0; /* Remove rounded corners for mobile */
         box-shadow: none; /* Remove shadow for a cleaner look */
+        margin: 0; /* Remove margin for full-width layout */
     }
 
     #header-content {
@@ -318,6 +330,11 @@ info-box {
         padding: 0.5rem 0;
     }
 
+    #about p {
+        flex-direction: column; /* Stack age and location vertically */
+        text-align: center; /* Center-align text */
+    }
+
     #projectsList {
         gap: 0.5rem; /* Reduce spacing between cards */
     }
@@ -341,5 +358,6 @@ info-box {
 
     footer {
         font-size: 0.8rem; /* Smaller footer text */
+        padding: 0.5rem; /* Reduce padding for mobile */
     }
 }

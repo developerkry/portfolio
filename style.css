@@ -301,7 +301,7 @@ info-box {
     #container {
         width: 100%;
         max-width: none;
-        padding: 1rem;
+        padding: 0.5rem; /* Reduce padding for mobile */
         border-radius: 0; /* Remove rounded corners for mobile */
         box-shadow: none; /* Remove shadow for a cleaner look */
         margin: 0; /* Remove margin for full-width layout */
@@ -309,12 +309,12 @@ info-box {
 
     #header-content {
         flex-direction: column; /* Stack profile picture and text vertically */
-        gap: 1rem;
+        gap: 0.5rem; /* Reduce spacing */
     }
 
     #profile-picture {
-        width: 80px;
-        height: 80px;
+        width: 60px; /* Smaller profile picture */
+        height: 60px;
     }
 
     #header-text {
@@ -323,7 +323,19 @@ info-box {
 
     #header-buttons {
         flex-direction: column; /* Stack buttons vertically */
-        gap: 0.5rem;
+        gap: 0.5rem; /* Reduce spacing between buttons */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Reduce font size for mobile */
+    }
+
+    header p {
+        font-size: 1rem; /* Reduce font size for mobile */
+    }
+
+    #specialty {
+        font-size: 0.9rem; /* Reduce font size for specialty text */
     }
 
     main {
@@ -333,6 +345,7 @@ info-box {
     #about p {
         flex-direction: column; /* Stack age and location vertically */
         text-align: center; /* Center-align text */
+        font-size: 0.9rem; /* Reduce font size */
     }
 
     #projectsList {
@@ -340,24 +353,24 @@ info-box {
     }
 
     .project-card {
-        width: 150px; /* Smaller cards for mobile */
+        width: 120px; /* Smaller cards for mobile */
     }
 
     .project-overlay h3 {
-        font-size: 0.9rem; /* Adjust font size for smaller cards */
+        font-size: 0.8rem; /* Adjust font size for smaller cards */
     }
 
     .project-overlay p {
-        font-size: 0.7rem; /* Adjust font size for smaller cards */
+        font-size: 0.6rem; /* Adjust font size for smaller cards */
     }
 
     .project-link {
-        font-size: 0.7rem; /* Adjust button font size */
-        padding: 0.3rem 0.6rem; /* Adjust button padding */
+        font-size: 0.6rem; /* Adjust button font size */
+        padding: 0.2rem 0.4rem; /* Adjust button padding */
     }
 
     footer {
-        font-size: 0.8rem; /* Smaller footer text */
+        font-size: 0.7rem; /* Smaller footer text */
         padding: 0.5rem; /* Reduce padding for mobile */
     }
 }
